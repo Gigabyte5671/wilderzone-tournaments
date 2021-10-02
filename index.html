@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wilderzone Tournaments</title>
+    <meta property="og:title" content="Wilderzone Tournaments">
+    <meta property="og:site_name" content="Wilderzone Tournaments">
+    <meta name="description" content="">
+    <meta property="og:description" content="">
+    <meta name="author" content="Gigabyte5671">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="site_cover.webp">
+    <meta name="twitter:image:alt" content="site cover image">
+    <meta property="og:url" content="">
+    <meta name="theme-color" content="#4C69FF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://gigabyte5671.github.io/lightshard-css/css/lightshard.css">
+    <link rel="stylesheet" href="https://wilderzone.live/css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="shortcut icon" href="assets/images/ta.webp">
+  </head>
+  
+  <body>
+    <nav>
+      <background></background>
+      <site_logo><img src="assets/images/ta.webp" draggable="false"><p>Tournaments</p></site_logo>
+      <navlinks>
+        <a class="active" onclick="navlinks(event);changePage(0)"><p>Home</p></a>
+        <a onclick="navlinks(event);changePage(1)"><p>Honor Series</p></a>
+        <a onclick="navlinks(event);changePage(2)"><p>Alpha Series</p></a>
+      </navlinks>
+    </nav>
+    
+    
+    <main style="height:100%;">
+      <background></background>
+
+      <left_block class="a_left_out hidden">
+        <left_block_inner>
+        </left_block_inner>
+      </left_block>
+
+      <center_block style="margin-left:0px;">
+        <center_block_inner>
+        </center_block_inner>
+      </center_block>
+    </main>
+
+
+    <footer>
+      <p>Lightshard&nbsp;&copy;2021</p>
+    </footer>
+  </body>
+  
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/tournament_data.js"></script>
+  <script src="lib/home_data.js"></script>
+  <script src="lib/populateDOM.js"></script>
+  <script> //Navigation Events
+    function navlinks(event){
+      $("navlinks").children().removeClass("active");
+      $(event.target).addClass("active");
+      /* if($(event.target).html() == "Home"){
+        $("title").html("Dazza Coaching");
+      }else{
+        $("title").html($(event.target).html() + " | simple sense");
+      } */
+    }
+    function navlinksDemo(event){
+      $("#navlinksDemo").children().removeClass("active");
+      $(event.target).addClass("active");
+    }
+  </script>
+</html>

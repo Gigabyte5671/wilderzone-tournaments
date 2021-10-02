@@ -1,0 +1,90 @@
+:root{
+  --banner_width: 70px;
+}
+
+site_logo:hover{
+  width: calc(var(--ls_nav_height) + 14ch);
+}
+
+background_image{
+  bottom: unset;
+  left: unset;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+}
+
+.banner_image{
+  display: block;
+  width: calc(var(--banner_width) - 10px);
+}
+
+left_block{
+  width: 0px;
+  margin: 3px 0px 0px 0px;
+  padding: 0px;
+  border: unset;
+  border-radius: unset;
+  transition: var(--anim_duration_short) ease width;
+  overflow: hidden;
+}
+left_block_inner{
+  overflow: hidden;
+}
+
+left_block .large_internal_link{
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 100%;
+  border-right: unset;
+  border-radius: 25px 0px 0px 25px;
+  opacity: 0.7;
+}
+left_block .large_internal_link:hover{
+  border-right: unset;
+}
+left_block .active{
+  border-right: unset;
+  opacity: 1;
+}
+left_block .active:hover{
+  border-right: unset;
+}
+
+section{
+  padding-right: 50%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid grey;
+}
+
+.tournament_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 400px;
+  min-height: 100px;
+  margin: 10px 0px 0px 0px;
+  padding: 4px 10px 8px 10px;
+  border: 1px solid grey;
+  border-radius: var(--ls_border_radius_large);
+  transition: var(--anim_duration_short) ease border;
+  cursor: pointer;
+}
+.tournament_block:hover{
+  border: 1px solid white;
+}
+.tournament_block h2{
+  margin: 0px 0px 0px 0px;
+  font-size: 20px;
+}
+.tournament_block p{
+  display: flex;
+  flex-direction: row;
+}
+.tournament_block p img{
+  display: block;
+  width: 20px;
+  margin: 0px 7px 0px 0px;
+  filter: invert(1);
+}

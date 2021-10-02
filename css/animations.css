@@ -1,0 +1,18 @@
+.a_left_out{
+  animation: var(--anim_duration_short) ease a_left_out forwards;
+}
+@keyframes a_left_out{
+  0%   {width: var(--banner_width);
+        opacity: 1;}
+  100% {width: 0px;
+        opacity: 0;}
+}
+.a_left_in{
+  animation: var(--anim_duration_short) ease a_left_in forwards;
+}
+@keyframes a_left_in{
+  0%   {width: 0px;
+        opacity: 0;}
+  100% {width: var(--banner_width);
+        opacity: 1;}
+}
