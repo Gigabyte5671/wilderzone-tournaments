@@ -88,3 +88,30 @@ section{
   margin: 0px 7px 0px 0px;
   filter: invert(1);
 }
+
+
+
+@media only screen and (max-width: 1000px){
+  center_block background_image{
+    opacity: 0.3;
+  }
+  section{
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 800px){
+  :root{
+    --site_logo_expanded_width: var(--site_logo_collapsed_width);
+  }
+  site_logo p{
+    display: none;
+  }
+  /* .banner_image{
+    width: calc(var(--banner_width) / 2);
+  } */
+}
+@media only screen and (max-width: 500px){
+  left_block{
+    display: none;
+  }
+}
