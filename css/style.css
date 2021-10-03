@@ -1,9 +1,8 @@
 :root{
-  --banner_width: 70px;
-}
+  --site_logo_collapsed_width: calc(var(--ls_nav_height) + 10px);
+  --site_logo_expanded_width: calc(var(--ls_nav_height) + 13ch);
 
-site_logo:hover{
-  width: calc(var(--ls_nav_height) + 14ch);
+  --banner_width: 70px;
 }
 
 background_image{
@@ -52,7 +51,7 @@ left_block .active:hover{
 }
 
 section{
-  padding-right: 50%;
+  padding-right: 40%;
   padding-bottom: 35px;
   border-bottom: 1px solid grey;
   /* opacity: 0; */
