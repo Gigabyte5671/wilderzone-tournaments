@@ -55,6 +55,8 @@ section{
   padding-right: 50%;
   padding-bottom: 35px;
   border-bottom: 1px solid grey;
+  /* opacity: 0; */
+  animation-delay: var(--anim_duration_short);
 }
 
 .tournament_block{
@@ -74,9 +76,8 @@ section{
 .tournament_block:hover{
   border: 1px solid white;
 }
-.tournament_block h2{
+.tournament_block h3{
   margin: 0px 0px 0px 0px;
-  font-size: 20px;
 }
 .tournament_block p{
   display: flex;
